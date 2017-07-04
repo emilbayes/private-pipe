@@ -1,0 +1,16 @@
+notifications:
+  email: false
+language: node_js
+node_js:
+- 4
+- 6
+- 7
+- 8
+- node
+deploy:
+  provider: npm
+  email: github@tixz.dk
+  api_key:
+    secure: lBgcbmexnehjubnsWvSV9kV+iSOftH8fTrZ1o1S1aDMvDmeHzDnZGV8r1/nkc5AZPodNedLts5v/U0Zca+hz8ldLNoWk9Wmgfyur8so5yPeAwHRNw+qpwx3RMnXBCsShu18fqM8PxRa7GBNBkBW1JzV8Km3A78uPHwkWkRoSDv951MtYH+yQ1oKVCizakKZUleORZIG6r1UnxzkynGYicZH31eXyX2jGvTpWXl3UktejtEwD2AMUbtV2fufktL+xmYJg1uZwUMEPjOSn9+ESg6ds4pE9WF46uujHDeAQU/DZop/ZjgOHY+L4J8+2fiURL9w7KMzhvE20YkTT0PvnSeQ1dpzdh5lllORmwN/HADqaE/Z1erw/yPJySkOBDJ8PGhzr7Omg/4QaMkaHikBpR0HkchdR+L+z+B5LWU/09KTYvX7vD8iK04WugikZTV90SjZVMW/E7CRtz2Hs2vudzKv5HiGvFxxdxbIU8Eq8UMpDYdNH1CECxPL0EeyeM1fXGLtpyu81k2nRSmBAwWUX3G69NbZH/XLznjh/yLRq/Nr/MFACU180i/VmwUYQkqlTClWezeWZWjvNBMQfbfE1SFDkzv2Bh2rQUXE2eM56KM+OBDZCo4sY2+Rd8UKzYViPg3wSXgtbFXtGXynoAxFns3pqKdOdRpmpHYt8hxN0WnI=
+  on:
+    tags: true

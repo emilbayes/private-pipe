@@ -1,0 +1,33 @@
+{
+  "name": "private-pipe",
+  "version": "0.0.0",
+  "description": "Simple encryption using UNIX pipes",
+  "main": "index.js",
+  "bin": {
+    "private-pipe": "bin.js"
+  },
+  "dependencies": {
+    "peek-stream": "^1.1.2",
+    "sodium-native": "^1.10.1"
+  },
+  "devDependencies": {
+    "choppa": "^1.0.2",
+    "tape": "^4.7.0"
+  },
+  "scripts": {
+    "test": "tape test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emilbayes/private-pipe.git"
+  },
+  "keywords": [
+
+  ],
+  "author": "Emil Bay <github@tixz.dk> (http://bayes.dk/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emilbayes/private-pipe/issues"
+  },
+  "homepage": "https://github.com/emilbayes/private-pipe#readme"
+}
