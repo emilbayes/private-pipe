@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "peek-stream": "^1.1.2",
+    "read-bytes-stream": "^1.0.0",
     "sodium-native": "^1.10.1"
   },
   "devDependencies": {
@@ -21,9 +22,7 @@
     "type": "git",
     "url": "git+https://github.com/emilbayes/private-pipe.git"
   },
-  "keywords": [
-
-  ],
+  "keywords": [],
   "author": "Emil Bay <github@tixz.dk> (http://bayes.dk/)",
   "license": "ISC",
   "bugs": {

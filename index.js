@@ -1,6 +1,6 @@
 var sodium = require('sodium-native')
 var transform = require('stream').Transform
-var peek = require('peek-stream')
+var readBytes = require('read-bytes-stream')
 
 var MAGIC_BYTES = Buffer.from('# private-pipe')
 
@@ -21,8 +21,8 @@ module.exports = function (password) {
     }
   })
 
-  return peek({newline: false, maxBuffer: nonce.length, consumeData: true}, function (header, swap) {
-    if (Buffer.compare(MAGIC_BYTES, header.slice(0, MAGIC_BYTES.length)) === 0) {
+  return readBytes(nonce.length, function (header, swap) {
+    if (header.length === nonce.length && Buffer.compare(MAGIC_BYTES, header.slice(0, MAGIC_BYTES.length)) === 0) {
       cipher.mode = 'decrypt'
       nonce.set(header)
     } else {
