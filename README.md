@@ -1,5 +1,7 @@
 # `private-pipe`
 
+[![Build Status](https://travis-ci.org/emilbayes/private-pipe.svg?branch=master)](https://travis-ci.org/emilbayes/private-pipe)
+
 > Simple encryption using UNIX pipes
 
 :warning: The encryption used is **unauthenticated**, which means that this
