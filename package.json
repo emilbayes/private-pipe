@@ -9,7 +9,7 @@
   "dependencies": {
     "peek-stream": "^1.1.2",
     "read-bytes-stream": "^1.0.0",
-    "sodium-native": "^1.10.1"
+    "sodium-native": "^2.2.5"
   },
   "devDependencies": {
     "choppa": "^1.0.2",
